@@ -1,0 +1,27 @@
+{
+	"tile_size": 32,
+	"blob_sets": [
+
+	],
+	"wang_sets": [
+		{
+			"members": [
+				{ "id":1, "role":4 },
+				{ "id":2, "role":6 },
+				{ "id":3, "role":2 },
+				{ "id":5, "role":12 },
+				{ "id":6, "role":15 },
+				{ "id":7, "role":3 },
+				{ "id":8, "role":8 },
+				{ "id":9, "role":9 },
+				{ "id":10, "role":1 },
+				{ "id":11, "role":11 },
+				{ "id":12, "role":13 },
+				{ "id":13, "role":5 },
+				{ "id":14, "role":7 },
+				{ "id":15, "role":14 },
+				{ "id":16, "role":10 }
+			]
+		}
+	]
+}

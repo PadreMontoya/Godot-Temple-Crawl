@@ -1,0 +1,234 @@
+[gd_scene load_steps=63 format=2]
+
+[ext_resource path="res://assets/Tiles/tileset_tdptiles_dungeon.tres" type="TileSet" id=1]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idledwn_0.png" type="Texture" id=2]
+[ext_resource path="res://src/levels/Player.gd" type="Script" id=3]
+[ext_resource path="res://assets/Effects/light.png" type="Texture" id=4]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_runlft_0.png" type="Texture" id=5]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_runlft_2.png" type="Texture" id=6]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_runlft_1.png" type="Texture" id=7]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_runlft_3.png" type="Texture" id=8]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_runup_3.png" type="Texture" id=9]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_runrgt_1.png" type="Texture" id=10]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_runrgt_0.png" type="Texture" id=11]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_runrgt_2.png" type="Texture" id=12]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_rundwn_2.png" type="Texture" id=13]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_runrgt_3.png" type="Texture" id=14]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_rundwn_3.png" type="Texture" id=15]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_rundwn_0.png" type="Texture" id=16]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_rundwn_1.png" type="Texture" id=17]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idledwn_3.png" type="Texture" id=18]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idlergt_1.png" type="Texture" id=19]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idlergt_2.png" type="Texture" id=20]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idlergt_3.png" type="Texture" id=21]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idledwn_1.png" type="Texture" id=22]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idlelft_3.png" type="Texture" id=23]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idleup_0.png" type="Texture" id=24]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idlelft_2.png" type="Texture" id=25]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idlelft_1.png" type="Texture" id=26]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idlergt_0.png" type="Texture" id=27]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idlelft_0.png" type="Texture" id=28]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idledwn_2.png" type="Texture" id=29]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_runup_1.png" type="Texture" id=30]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_runup_2.png" type="Texture" id=31]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_runup_0.png" type="Texture" id=32]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idleup_1.png" type="Texture" id=33]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idleup_2.png" type="Texture" id=34]
+[ext_resource path="res://assets/Characters/Player Characters/tdpchar_0/tdpchar_0_idleup_3.png" type="Texture" id=35]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_runlft_0.png" type="Texture" id=36]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_death_0.png" type="Texture" id=37]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_corpse_0.png" type="Texture" id=38]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_runlft_1.png" type="Texture" id=39]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_death_5.png" type="Texture" id=40]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_runrgt_1.png" type="Texture" id=41]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_death_1.png" type="Texture" id=42]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_idlergt_0.png" type="Texture" id=43]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_ildelft_0.png" type="Texture" id=44]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_death_4.png" type="Texture" id=45]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_runlft_2.png" type="Texture" id=46]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_ildelft_1.png" type="Texture" id=47]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_runrgt_0.png" type="Texture" id=48]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_ildelft_2.png" type="Texture" id=49]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_idlergt_1.png" type="Texture" id=50]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_runlft_3.png" type="Texture" id=51]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_death_2.png" type="Texture" id=52]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_death_3.png" type="Texture" id=53]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_idlergt_2.png" type="Texture" id=54]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_runrgt_2.png" type="Texture" id=55]
+[ext_resource path="res://assets/Characters/Enemies/tdpenemy_2/tdpenemy_2_runrgt_3.png" type="Texture" id=56]
+[ext_resource path="res://src/levels/Mummy.gd" type="Script" id=57]
+
+[sub_resource type="Environment" id=1]
+ambient_light_energy = 0.4
+fog_enabled = true
+fog_sun_amount = 0.2
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 37 ), ExtResource( 42 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 45 ), ExtResource( 40 ) ],
+"loop": true,
+"name": "death",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 38 ) ],
+"loop": true,
+"name": "corpse",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 39 ), ExtResource( 46 ), ExtResource( 51 ) ],
+"loop": true,
+"name": "left_run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 48 ), ExtResource( 41 ), ExtResource( 55 ), ExtResource( 56 ) ],
+"loop": true,
+"name": "right_run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 44 ), ExtResource( 47 ), ExtResource( 49 ) ],
+"loop": true,
+"name": "left_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 43 ), ExtResource( 50 ), ExtResource( 54 ) ],
+"loop": true,
+"name": "right_idle",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 11.1304, 15.4601 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "left_run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "up_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "right_run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 28 ), ExtResource( 26 ), ExtResource( 25 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "left_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "right_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "up_run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 22 ), ExtResource( 29 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "down_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 13 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "down_run",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 8.02073, 12.3919 )
+
+[node name="Dungeon" type="Node2D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 1 )
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+position = Vector2( 273.228, 177.168 )
+
+[node name="TileMap" type="TileMap" parent="Navigation2D"]
+position = Vector2( -273.228, -177.168 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+collision_use_kinematic = true
+collision_layer = 2
+format = 1
+tile_data = PoolIntArray( 131079, 18, 65536, 131080, 18, 65537, 131081, 18, 65537, 131082, 18, 65537, 131083, 18, 65537, 131084, 18, 65537, 131085, 18, 65537, 131086, 18, 65537, 131087, 18, 65537, 131088, 18, 65537, 131089, 18, 65537, 131090, 18, 65537, 131091, 18, 65538, 196614, 18, 65536, 196615, 18, 131076, 196616, 18, 131073, 196617, 18, 131073, 196618, 18, 131073, 196619, 18, 131073, 196620, 18, 131073, 196621, 18, 131073, 196622, 18, 131073, 196623, 18, 131073, 196624, 18, 131073, 196625, 18, 131073, 196626, 18, 131073, 196627, 18, 131075, 196628, 18, 65538, 262150, 18, 131072, 262151, 18, 131073, 262152, 18, 131073, 262153, 18, 131073, 262154, 18, 131073, 262155, 18, 131073, 262156, 18, 131073, 262157, 18, 131073, 262158, 18, 131073, 262159, 18, 131073, 262160, 18, 131073, 262161, 18, 131073, 262162, 18, 131073, 262163, 18, 131073, 262164, 18, 131074, 327685, 18, 65536, 327686, 18, 131076, 327687, 18, 131073, 327688, 18, 65539, 327689, 18, 196609, 327690, 18, 65540, 327691, 18, 131073, 327692, 18, 131073, 327693, 18, 131073, 327694, 18, 65539, 327695, 18, 196609, 327696, 18, 65540, 327697, 18, 131073, 327698, 18, 131073, 327699, 18, 131073, 327700, 18, 131075, 327701, 18, 65538, 393221, 18, 131072, 393222, 18, 131073, 393223, 18, 131073, 393224, 18, 131074, 393225, 0, 0, 393226, 18, 131072, 393227, 18, 131073, 393228, 18, 65539, 393229, 18, 196609, 393230, 18, 196610, 393231, 0, 0, 393232, 18, 131072, 393233, 18, 131073, 393234, 18, 131073, 393235, 18, 131073, 393236, 18, 131073, 393237, 18, 131075, 393238, 18, 65538, 458757, 18, 131072, 458758, 18, 131073, 458759, 18, 131073, 458760, 18, 131075, 458761, 18, 65537, 458762, 18, 131076, 458763, 18, 131073, 458764, 18, 131074, 458765, 0, 0, 458766, 0, 0, 458767, 0, 0, 458768, 18, 131072, 458769, 18, 131073, 458770, 18, 131073, 458771, 18, 131073, 458772, 18, 131073, 458773, 18, 131073, 458774, 18, 131074, 524293, 18, 131072, 524294, 18, 131073, 524295, 18, 131073, 524296, 18, 131073, 524297, 18, 131073, 524298, 18, 131073, 524299, 18, 131073, 524300, 18, 131075, 524301, 18, 65537, 524302, 18, 65537, 524303, 18, 65537, 524304, 18, 131076, 524305, 18, 131073, 524306, 18, 131073, 524307, 18, 131073, 524308, 18, 131073, 524309, 18, 131073, 524310, 18, 131074, 589829, 18, 131072, 589830, 18, 131073, 589831, 18, 131073, 589832, 18, 131073, 589833, 18, 131073, 589834, 18, 131073, 589835, 18, 131073, 589836, 18, 131073, 589837, 18, 131073, 589838, 18, 131073, 589839, 18, 131073, 589840, 18, 131073, 589841, 18, 131073, 589842, 18, 131073, 589843, 18, 131073, 589844, 18, 131073, 589845, 18, 131073, 589846, 18, 131074, 655365, 18, 196608, 655366, 18, 65540, 655367, 18, 131073, 655368, 18, 131073, 655369, 18, 131073, 655370, 18, 131073, 655371, 18, 131073, 655372, 18, 131073, 655373, 18, 131073, 655374, 18, 131073, 655375, 18, 131073, 655376, 18, 131073, 655377, 18, 131073, 655378, 18, 131073, 655379, 18, 131073, 655380, 18, 131073, 655381, 18, 65539, 655382, 18, 196610, 720902, 18, 196608, 720903, 18, 196609, 720904, 18, 65540, 720905, 18, 131073, 720906, 18, 131073, 720907, 18, 131073, 720908, 18, 65539, 720909, 18, 196609, 720910, 18, 196609, 720911, 18, 65540, 720912, 18, 131073, 720913, 18, 131073, 720914, 18, 131073, 720915, 18, 131073, 720916, 18, 65539, 720917, 18, 196610, 786440, 18, 131072, 786441, 18, 131073, 786442, 18, 131073, 786443, 18, 131073, 786444, 18, 131074, 786445, 0, 0, 786446, 0, 0, 786447, 18, 131072, 786448, 18, 131073, 786449, 18, 131073, 786450, 18, 131073, 786451, 18, 65539, 786452, 18, 196610, 851976, 18, 131072, 851977, 18, 131073, 851978, 18, 131073, 851979, 18, 131073, 851980, 18, 131075, 851981, 18, 65537, 851982, 18, 65537, 851983, 18, 131076, 851984, 18, 131073, 851985, 18, 131073, 851986, 18, 65539, 851987, 18, 196610, 917512, 18, 196608, 917513, 18, 65540, 917514, 18, 131073, 917515, 18, 131073, 917516, 18, 131073, 917517, 18, 131073, 917518, 18, 131073, 917519, 18, 131073, 917520, 18, 131073, 917521, 18, 65539, 917522, 18, 196610, 983049, 18, 196608, 983050, 18, 196609, 983051, 18, 65540, 983052, 18, 131073, 983053, 18, 131073, 983054, 18, 131073, 983055, 18, 131073, 983056, 18, 131073, 983057, 18, 131074, 1048587, 18, 196608, 1048588, 18, 196609, 1048589, 18, 196609, 1048590, 18, 196609, 1048591, 18, 196609, 1048592, 18, 196609, 1048593, 18, 196610 )
+
+[node name="Mummy" type="KinematicBody2D" parent="."]
+position = Vector2( 577.294, 297.417 )
+script = ExtResource( 57 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Mummy"]
+frames = SubResource( 2 )
+animation = "left_idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mummy"]
+position = Vector2( -1.89202, 1.26134 )
+shape = SubResource( 3 )
+
+[node name="Player" type="KinematicBody2D" parent="."]
+position = Vector2( 332.991, 295.66 )
+collision_mask = 10
+script = ExtResource( 3 )
+
+[node name="Light2D" type="Light2D" parent="Player"]
+texture = ExtResource( 4 )
+texture_scale = 7.18
+color = Color( 0.956863, 0.933333, 0.305882, 1 )
+energy = 0.51
+shadow_enabled = true
+shadow_color = Color( 0.894118, 0.0784314, 0.0784314, 0 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+zoom = Vector2( 0.5, 0.5 )
+smoothing_enabled = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
+frames = SubResource( 4 )
+animation = "down_run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource( 5 )
+
+[node name="EdgeSmootherUpRight" type="RayCast2D" parent="Player"]
+rotation = -2.35619
+enabled = true
+cast_to = Vector2( 0, 25 )
+collision_mask = 10
+
+[node name="EdgeSmootherUpLeft" type="RayCast2D" parent="Player"]
+rotation = 2.35619
+enabled = true
+cast_to = Vector2( 0, 25 )
+collision_mask = 10
+
+[node name="EdgeSmootherDownRight" type="RayCast2D" parent="Player"]
+rotation = -0.785398
+enabled = true
+cast_to = Vector2( 0, 25 )
+collision_mask = 10
+
+[node name="EdgeSmootherDownLeft" type="RayCast2D" parent="Player"]
+rotation = 0.785398
+enabled = true
+cast_to = Vector2( 0, 25 )
+collision_mask = 10
+
+[node name="Debugger" type="Label" parent="Player"]
+margin_left = -43.3062
+margin_top = -29.2211
+margin_right = 45.6938
+margin_bottom = -15.2211
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
